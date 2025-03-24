@@ -1,0 +1,19 @@
+.potion {
+  width: var(--tube-width);
+  height: var(--tube-height);
+  font-size: var(--tube-font);
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.potionBody {
+  height: 100%;
+  width: 100%;
+  border: 2px solid #FFF;
+  border-top: none;
+  border-radius: 0 0 20px 20px;
+  position: relative;
+  z-index: 2;
+  background-color: #ffffff23;
+}

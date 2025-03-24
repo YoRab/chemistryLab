@@ -1,0 +1,14 @@
+.draggable {
+    user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+        filter: drop-shadow(rgba(255, 255, 255, 0.4) 0px 0px 0.25em);
+    }
+}

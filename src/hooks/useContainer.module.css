@@ -1,0 +1,9 @@
+.container {
+    width: fit-content;
+    position: relative;
+    z-index: 1;
+
+    &:hover {
+        z-index: 2;
+    }
+}

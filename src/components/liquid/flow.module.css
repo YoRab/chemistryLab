@@ -1,0 +1,69 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes drop {
+  0% {
+    height: 24px;
+    top: 0px;
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+
+    height: 42px;
+    opacity: 1;
+    top: 600px;
+  }
+}
+
+.drops {
+  -webkit-filter: url('#liquid');
+  filter: url('#liquid');
+  z-index: 1;
+  opacity: 0;
+  animation: fade-in .1s linear .4s forwards;
+  transform: scaleX(var(--drop-scalex));
+}
+
+.drop1,
+.drop2 {
+  width: 21px;
+  height: 24px;
+  border-radius: 24px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  background-color: var(--flow-color);
+}
+
+.drop1 {
+  width: 90px;
+  height: 16px;
+  top: 2px;
+  border-radius: 0;
+}
+
+.drop2 {
+  height: 24px;
+  /* width: var(--drop-width); */
+  animation: drop 1.3s cubic-bezier(.72, .02, .9, .72) infinite;
+  animation-delay: var(--drop-delay);
+}
+
+.flow {
+  overflow: hidden;
+  height: var(--flow-height, 644px);
+}

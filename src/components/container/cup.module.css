@@ -1,0 +1,30 @@
+.potion {
+  width: var(--cup-size);
+  height: var(--cup-size);
+  font-size: var(--cup-font);
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.potionTop {
+  width: 14%;
+  height: 16%;
+  position: absolute;
+  top: -16%;
+  border-radius: 8%;
+  border: 0.3em solid #FFF;
+  border-bottom: none;
+  background-color: #ffffff23;
+  z-index: 3;
+}
+
+.potionBody {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 0.4em solid #FFF;
+  position: relative;
+  z-index: 2;
+  background-color: #ffffff23;
+}
