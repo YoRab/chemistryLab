@@ -76,7 +76,7 @@ const useRotation = ({
       addCursorPosition?.(cursorPosition)
     }
 
-    const handleMouseEnd = (e: MouseEvent | TouchEvent) => {
+    const handleMouseEnd = (_e: MouseEvent | TouchEvent) => {
       setDragState(prev => ({ ...prev, isDragging: false }))
     }
 

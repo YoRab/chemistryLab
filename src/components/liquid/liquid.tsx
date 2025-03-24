@@ -13,7 +13,7 @@ const Liquid = ({
   ...props
 }: { acc: number; fill: number; velocity: number; volume: number; liquids: LiquidAmount[] } & JSX.IntrinsicElements['div']) => {
   const [factor, setFactor] = useState(0)
-  const { color: liquidColor, volume: totalVolume } =
+  const { color: liquidColor } =
     liquids.length > 1
       ? liquids.slice(1).reduce(
           (mixx, liquid) => ({
@@ -26,8 +26,7 @@ const Liquid = ({
           }
         )
       : {
-          color: LIQUIDS[liquids[0].id].color as string,
-          volume: liquids[0].volume
+          color: LIQUIDS[liquids[0].id].color as string
         }
 
   useEffect(() => {
